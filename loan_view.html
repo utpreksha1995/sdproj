@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Horizontal Layout | Lexa - Admin & Dashboard Template</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+      <meta content="Themesbrand" name="author" />
+      <!-- App favicon -->
+      <link rel="shortcut icon" href="assets/images/favicon.ico">
+      <!-- Bootstrap Css -->
+      <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+      <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+      <!-- Responsive datatable examples -->
+      <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+      <!-- Bootstrap Css -->
+      <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+      <!-- Icons Css -->
+      <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+      <!-- App Css-->
+      <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+   </head>
+   <body data-topbar="light" data-layout="horizontal">
+      <!-- Begin page -->
+      <div id="layout-wrapper">
+      <header id="page-topbar">
+         <div class="navbar-header">
+            <div class="container-fluid">
+               <div class="float-start">
+                  <div class="navbar-brand-box">
+                     <a href="index.html" class="logo logo-dark">
+                     <span class="logo-sm">
+                     <img src="assets/images/logo-sm.png" alt="" height="50">
+                     </span>
+                     <span class="logo-lg">
+                     <img src="assets/images/logo-dark.png" alt="" height="50">
+                     </span>
+                     </a>    
+                     <a href="index.html" class="logo logo-light">
+                     <span class="logo-sm">
+                     <img src="assets/images/logo-sm.png" alt="" height="50">
+                     </span>
+                     <span class="logo-lg">
+                     <img src="assets/images/logo-light.png" alt="" height="50">
+                     </span>
+                     </a>
+                  </div>
+                  <button type="button" class="btn btn-sm px-3 font-size-24 d-lg-none header-item waves-effect waves-light" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                  <i class="mdi mdi-menu"></i>
+                  </button>
+               </div>
+               <div class="float-end">
+                  <select class="apl">
+                     <option>Application</option>
+                     <option>Loan</option>
+                  </select>
+                  <select class="apl">
+                     <option>ID</option>
+                     <option>Mobile</option>
+                     <option>Email</option>
+                  </select>
+                  <form class="app-search d-none d-lg-inline-block">
+                     <div class="position-relative">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <span class="fa fa-search"></span>
+                     </div>
+                  </form>
+                  <div class="dropdown d-none d-lg-inline-block ms-2">
+                     <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Add
+                     </button>
+                     <div class="dropdown-menu dropdown-menu-end">    
+                        <a href="add_user_partner.html#adduser" class="dropdown-item notify-item">
+                        User
+                        </a>
+                        <a href="add_user_partner.html#addpartner" class="dropdown-item notify-item">
+                        Partner
+                        </a> 
+                     </div>
+                  </div>
+                  <div class="dropdown d-none d-lg-inline-block">
+                     <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                     <i class="mdi mdi-fullscreen font-size-24"></i>
+                     </button>
+                  </div>
+                  <div class="dropdown d-inline-block d-lg-none ms-2">
+                     <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="mdi mdi-magnify"></i>
+                     </button>
+                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+                        <form class="p-3">
+                           <div class="form-group m-0">
+                              <div class="input-group">
+                                 <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                 <div class="input-group-append">
+                                    <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="dropdown d-inline-block ms-1">
+                     <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="ti-bell"></i>
+                     </button>
+                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                        aria-labelledby="page-header-notifications-dropdown">
+                        <div class="p-3">
+                           <div class="row align-items-center">
+                              <div class="col">
+                                 <h5 class="m-0"> Notifications (258) </h5>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="p-2 border-top">
+                           <a class="btn btn-sm btn-link font-size-14 w-100 text-center" href="javascript:void(0)">
+                           View all
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="dropdown d-inline-block">
+                     <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <img class="rounded-circle header-profile-user" src="assets/images/users/user-4.jpg"
+                        alt="Header Avatar">
+                     </button>
+                     <div class="dropdown-menu dropdown-menu-end">
+                        <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle font-size-17 text-muted align-middle me-1"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="mdi mdi-wallet font-size-17 text-muted align-middle me-1"></i> My Wallet</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power font-size-17 text-muted align-middle me-1 text-danger"></i> Logout</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="top-navigation">
+            <div class="page-title-content">
+               <div class="container-fluid">
+                  <div class="row">                             
+                  </div>
+               </div>
+            </div>
+            <div class="container-fluid">
+               <div class="topnav">
+                  <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+                        <div class="collapse navbar-collapse" id="topnav-menu-content">
+                           <ul class="navbar-nav">
+						      <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Module
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                    <a href="report_list.html" class="dropdown-item">Report Module</a>                                
+                                    <a href="master_report.html" class="dropdown-item">Master Report</a>
+									<a href="credit_progress_report.html" class="dropdown-item">Progress Report</a>
+									<a href="hourlyregistereduser.html" class="dropdown-item">Hourly Report</a>
+                                 </div>
+                              </li>
+                            <!--   <li class="nav-item">
+                                 <a class="nav-link" href="report_list.html">
+                                 Report Module
+                                 </a>
+                              </li> -->
+                              <!-- <li class="nav-item">
+                                 <a class="nav-link" href="master_report.html" id="topnav-email">
+                                 Master Report 
+                                 </a>                                          
+                              </li> -->
+                              <li class="nav-item">
+                                 <a class="nav-link dropdown-toggle arrow-none" href="agent_dashboard.html" id="topnav-components" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Agent Dashboard 
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="loan.html" id="topnav-forms">
+                                 Loan Dashboard 
+                                 </a>                                           
+                              </li>
+                              <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 EMI
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                    <a href="emi_schedule.html" class="dropdown-item">EMI Schedule</a>                                
+                                    <a href="emi.html" class="dropdown-item">EMI List</a>
+                                 </div>
+                              </li>
+                              <!-- <li class="nav-item">
+                                 <a class="nav-link" href="hourlyregistereduser.html" id="topnav-charts" role="button"
+                                    >
+                                 Hourly Report
+                                 </a>                                           
+                              </li> -->
+                              <li class="nav-item">
+                                 <a class="nav-link" href="blockfrauduser.html" id="topnav-pages" role="button"
+                                    >
+                                 Block Customer
+                                 </a>                                           
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="user_scubscription_skip.html" id="topnav-pages" role="button"
+                                    >
+                                 Skip Scription
+                                 </a>                                           
+                              </li>
+                              <!-- <li class="nav-item">
+                                 <a class="nav-link" href="credit_progress_report.html" id="topnav-pages" role="button"
+                                    >
+                                 progress Report
+                                 </a>                                           
+                              </li> -->
+                              <li class="nav-item">
+                                 <a class="nav-link" href="rollback.html" id="topnav-pages" role="button"
+                                    >
+                                 Roll back
+                                 </a>                                           
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="payoutdashboard.html" id="topnav-pages" role="button"
+                                    >
+                                 NBFC Balance
+                                 </a>                                           
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="ceo_collection_dashboard.html" id="topnav-pages" role="button"
+                                    >
+                                 CEO Dashboard
+                                 </a>                                           
+                              </li>
+							  
+							 
+							  <li class="nav-item">
+							  <a href="applicationallocationnew.html" class="nav-link" id="topnav-pages" role="button">Application Allocation</a>
+							  </li>
+							  <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Report
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                    <a href="getapploformat.html" class="dropdown-item">Disbursed Format</a>                                
+                                 
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- Left Sidebar End -->
+      <!-- ============================================================== -->
+      <!-- Start right Content here -->
+      <!-- ============================================================== -->
+      <div class="main-content">
+      <div class="page-content">
+         <div class="container-fluid">
+            <!-- start page title -->
+            <!-- <div class="row">
+               <div class="col-sm-6">
+                  <div class="page-title-box">
+                     <h4><i class="mdi mdi-arrow-right text-primary me-1"></i> Loan</h4>
+                  </div>
+               </div>
+            </div>
+			<div class="row">
+			    <div class="col-12">
+					<div class="alert alert-success" role="alert">
+						Loan id <strong>closed</strong>
+					</div>
+				</div>
+			</div> -->
+			<div class="row">
+                     <div class="col-12 pb-3">                        
+                        <i class="mdi mdi-arrow-right text-primary me-1"></i> Loan <span class="badge bg-primary padding-8"> LOAN IS CLOSED (Loan Completed) </span>
+                     </div>
+                  </div>
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="button-items">
+                           <button type="button" class="btn btn-success waves-effect waves-light btn-sm" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center"><i class="fa fa-plus"></i> Add Waiver Request</button>
+                           <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h5 class="modal-title text-center">Add Waiver Request</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="row">
+                                          <div class="col-lg-12">
+                                             <div class="">
+                                                <div class="">
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <div class="mt-0">
+                                                            <form>
+                                                               <div class="row">
+                                                                  <div class="col-md-6">
+                                                                     <div class="mb-3">
+                                                                        <input type="text" class="form-control" placeholder="Email ID">
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-md-6">
+                                                                     <div class="mb-3">
+                                                                        <input type="text" class="form-control" placeholder="Waiver Amount">
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-md-6">
+                                                                     <div class="mb-3">
+                                                                        <select class="form-control">
+                                                                           <option value="">Select Department</option>
+                                                                           <optgroup label="Accounts">
+                                                                              <option value="7">Account</option>
+                                                                           </optgroup>
+                                                                           <optgroup label="Collections">
+                                                                              <option value="9">Collection</option>
+                                                                           </optgroup>
+                                                                           <optgroup label="Credits">
+                                                                              <option value="11">Credit</option>
+                                                                           </optgroup>
+                                                                           <optgroup label="Customer Supports">
+                                                                              <option value="13">CustomerSupport</option>
+                                                                           </optgroup>
+                                                                           <optgroup label="ITs">
+                                                                              <option value="15">IT</option>
+                                                                           </optgroup>
+                                                                           <optgroup label="Operations">
+                                                                              <option value="17">Operation</option>
+                                                                           </optgroup>
+                                                                           <optgroup label="Admins">
+                                                                              <option value="28">Admin</option>
+                                                                           </optgroup>
+                                                                        </select>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-md-6">
+                                                                     <div class="mb-3">
+                                                                        <select class="form-control">
+                                                                           <option>Select Agent</option>
+                                                                        </select>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-md-12">
+                                                                     <textarea placeholder="Description"></textarea>
+                                                                  </div>
+                                                               </div>
+                                                               <div class="mt-4">
+                                                                  <button type="submit" class="btn btn-primary w-md btn-sm">Submit</button>
+                                                               </div>
+                                                            </form>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- /.modal-content -->
+                              </div>
+                           </div>
+                           <button type="button" class="btn btn-purple waves-effect waves-light btn-sm" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center1"><i class="fa fa-file"></i> Waiver Request List</button>
+                           <div class="modal fade bs-example-modal-center1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-lg">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h5 class="modal-title text-center">Waiver Requst List</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="row">
+                                          <div class="col-lg-12">
+                                             <div class="">
+                                                <div class="">
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <div class="mt-0">
+                                                            <table class="table table-bordered dt-responsive">
+                                                               <tbody>
+                                                                  <tr>
+                                                                     <th>Id</th>
+                                                                     <th>Amount</th>
+                                                                     <th>Date</th>
+                                                                     <th>Status</th>
+                                                                     <th> Description</th>
+                                                                     <th>Applied By</th>
+                                                                     <th>Department By</th>
+                                                                  </tr>
+                                                                  <tr>
+                                                                     <td>1</td>
+                                                                     <td>Rs. 500.00</td>
+                                                                     <td>01 Nov 21</td>
+                                                                     <td>Pending</td>
+                                                                     <td></td>
+                                                                     <td>ganesh gaikar</td>
+                                                                     <td>Collection</td>
+                                                                  </tr>
+                                                               </tbody>
+                                                            </table>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- /.modal-content -->
+                              </div>
+                           </div>
+                           <button type="button" class="btn btn-primary waves-effect waves-light btn-sm" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center2"><i class="fa fa-plus"></i> Add Comment</button>
+                           <div class="modal fade bs-example-modal-center2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h5 class="modal-title text-center">Add Loan Comment</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="row">
+                                          <div class="col-lg-12">
+                                             <div class="">
+                                                <div class="">
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <div class="mt-0">
+                                                            <form>
+                                                               <div class="row">
+                                                                  <div class="col-lg-12">
+                                                                     <div class="form-group">
+                                                                        <input type="text" class="form-control" placeholder="Comment"/>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="mt-4">
+                                                                     <button type="submit" class="btn btn-primary w-md btn-sm">Submit</button>
+                                                                  </div>
+                                                               </div>
+                                                            </form>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- /.modal-content -->
+                              </div>
+                           </div>
+                           <button type="button" class="btn btn-secondary waves-effect waves-light btn-sm" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center3">Add Pay Collection</button>
+                           <div class="modal fade bs-example-modal-center3" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h5 class="modal-title text-center">Add Pay Collection</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="row">
+                                          <div class="col-lg-12">
+                                             <div class="">
+                                                <div class="">
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <div class="mt-0">
+                                                            <form>
+                                                               <div class="row">
+                                                                  <div class="col-lg-6">
+                                                                     <div class="form-group">
+                                                                        <label>Received Amount</label>
+                                                                        <input type="text" class="form-control" placeholder="Received Amount"/>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-lg-6">
+                                                                     <div class="form-group">
+                                                                        <label>UTR</label>
+                                                                        <input type="text" class="form-control" placeholder="UTR"/>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-lg-6">
+                                                                     <div class="form-group">
+                                                                        <label class="mt-3">Effective date</label>
+                                                                        <input type="date" class="form-control" />
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-lg-6">
+                                                                     <div class="form-group">
+                                                                        <label class="mt-3">Actual Payment Date</label>
+                                                                        <input type="date" class="form-control" />
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-lg-6">
+                                                                     <div class="form-group">
+                                                                        <label class="mt-3">Agency Name</label>
+                                                                        <select class="form-control">
+                                                                           <option value="SD Organic">SD Organic</option>
+                                                                           <option value="SD Collection Team">Sd Collection Team</option>
+                                                                           <option value="Max BPO">Max BPO</option>
+                                                                        </select>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-lg-6">
+                                                                     <div class="form-group">
+                                                                        <label class="mt-3">source</label>
+                                                                        <select class="form-control">
+                                                                           <option value="SD Organic">Fund Transfer </option>
+                                                                           <option value="SD Collection Team">Mandate</option>
+                                                                           <option value="Max BPO">Bank Account</option>
+                                                                           <option>Pay Now</option>
+                                                                        </select>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="mt-4">
+                                                                     <button type="submit" class="btn btn-primary w-md btn-sm">Submit</button>
+                                                                  </div>
+                                                               </div>
+                                                            </form>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- /.modal-content -->
+                              </div>
+                           </div>
+                           <button type="button" class="btn btn-success waves-effect waves-light btn-sm">Contact details</button>
+                           <button type="button" class="btn btn-purple waves-effect waves-light btn-sm">Meta Data</button>
+                           <button type="button" class="btn btn-primary waves-effect waves-light btn-sm">Send Payment Link</button>
+                           <button type="button" class="btn btn-secondary waves-effect waves-light btn-sm" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center5"><i class="fa fa-plus"></i> Add Follow Up</button>
+                           <div class="modal fade bs-example-modal-center5" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                 <div class="modal-content">
+                                    <div class="modal-header">
+                                       <h5 class="modal-title text-center">Add Follow Up</h5>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                       <div class="row">
+                                          <div class="col-lg-12">
+                                             <div class="">
+                                                <div class="">
+                                                   <div class="row">
+                                                      <div class="col-lg-12">
+                                                         <div class="mt-0">
+                                                            <form>
+                                                               <div class="row">
+                                                                  <div class="col-lg-12">
+                                                                     <div class="form-group">
+                                                                        <label>Date Schedule</label>
+                                                                        <input type="date" class="form-control" />
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="col-lg-12">
+                                                                     <div class="form-group">
+                                                                        <label class="mt-3">Description</label>
+                                                                        <textarea rows="5" cols="8"></textarea>
+                                                                     </div>
+                                                                  </div>
+                                                                  <div class="mt-4">
+                                                                     <button type="submit" class="btn btn-primary w-md btn-sm">Submit</button>
+                                                                  </div>
+                                                               </div>
+                                                            </form>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- /.modal-content -->
+                              </div>
+                           </div>
+                           <button type="button" class="btn btn-purple waves-effect waves-light btn-sm">Allocate Case</button>
+                           <button type="button" class="btn btn-success waves-effect waves-light btn-sm">Allocation History</button>
+                           <select class="btn btn-primary waves-effect waves-light btn-sm">
+                              <option>Unresolved</option>
+                              <option>resolved</option>
+                              <option>Pending</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-12">
+                  <div class="card">
+                     <div class="card-title">
+                        ALLOCATION DETAILS
+                     </div>
+                     <div class="card-body">
+                        <table class="table table-bordered">
+                           <tbody>
+                              <tr>
+                                 <th>Id</th>
+                                 <th>Case Type</th>
+                                 <th>Allocation Status</th>
+                                 <th>Allocation Priority</th>
+                                 <th>Department From</th>
+                                 <th>Agent From</th>
+                                 <th>Department To</th>
+                                 <th>Allocation To</th>
+                                 <th>Description</th>
+                                 <th>Created</th>
+                              </tr>
+                              <tr>
+                                 <td># 1&nbsp;</td>
+                                 <td>Kaiomarz Jimmy  Kekuna&nbsp;</td>
+                                 <td>9819266031&nbsp;</td>
+                                 <td>Kkaiomarz@gmail.com&nbsp;</td>
+                                 <td>Male&nbsp;</td>
+                                 <td>&nbsp;</td>
+                                 <td>&nbsp;</td>
+                                 <td>&nbsp;</td>
+                                 <td>&nbsp;</td>
+                                 <td>&nbsp;</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <!-- end col -->
+               </div>
+            </div>
+            <!-- end page title -->
+            <div class="row">
+               <div class="col-6">
+                  <div class="card">
+                     <div class="card-title">
+                        Customer details
+                     </div>
+                     <div class="card-body">
+                        <table class="table table-bordered">
+                           <tbody>
+                              <tr>
+                                 <th>Id</th>
+                                 <th>Name</th>
+                                 <th>Mob</th>
+                                 <th>Email</th>
+                                 <th>Gender</th>
+                                 <th>Co Name</th>
+                                 <th>Co Mob</th>
+                              </tr>
+                              <tr>
+                                 <td># 1&nbsp;</td>
+                                 <td>Kaiomarz Jimmy  Kekuna&nbsp;</td>
+                                 <td>9819266031&nbsp;</td>
+                                 <td>Kkaiomarz@gmail.com&nbsp;</td>
+                                 <td>Male&nbsp;</td>
+                                 <td>&nbsp;</td>
+                                 <td>&nbsp;</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <!-- end col -->
+               </div>
+               <div class="col-6">
+                  <div class="card">
+                     <div class="card-title">
+                        Reference details
+                     </div>
+                     <div class="card-body">
+                        <table class="table table-bordered">
+                           <tbody>
+                              <tr>
+                                 <th>Id</th>
+                                 <th>Relp</th>
+                                 <th>Name</th>
+                                 <th>Mobile</th>
+                              </tr>
+                              <tr>
+                                 <td># 1</td>
+                                 <td>NA</td>
+                                 <td>Arun Shinde</td>
+                                 <td>9987234897</td>
+                              </tr>
+                              <tr>
+                                 <td># 1</td>
+                                 <td>NA</td>
+                                 <td>Arun Shinde</td>
+                                 <td>9987234897</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <!-- end row -->
+               <!-- end row -->
+            </div>
+            <div class="row">
+               <div class="col-12">
+                  <div class="card">
+                     <div class="card-title">
+                        Loan details
+                     </div>
+                     <div class="card-body">
+                        <table class="table table-striped table-bordered">
+                           <tbody>
+                              <tr>
+                                 <th>Loan id</th>
+                                 <th>App. Id</th>
+                                 <th>Approved Amt</th>
+                                 <th>Principal Out.</th>
+                                 <th>Total Out.</th>
+                                 <th>Tenure</th>
+                                 <th>Emi NO.</th>
+                                 <th>Emi Type</th>
+                                 <th>Processing Fee</th>
+                                 <th>Pre EMI Interest</th>
+                                 <th>Total Interest</th>
+                                 <th>Total Disburse</th>
+                                 <th>Disburse Date</th>
+                                 <th>Policy Id</th>
+                                 <th>OmApprove Date</th>
+                              </tr>
+                              <tr>
+                                 <td>#11272&nbsp;</td>
+                                 <td><a href="/applications/view/11272" target="_blank">#11272</a></td>
+                                 <td>₹ 10000&nbsp;</td>
+                                 <td>₹ 10000&nbsp;</td>
+                                 <td class="text-red">
+                                    ₹ -2000	
+                                 </td>
+                                 <td>45</td>
+                                 <td>1</td>
+                                 <td>Bullet</td>
+                                 <td>₹ 900</td>
+                                 <td>₹ 0</td>
+                                 <td>₹ 0</td>
+                                 <td>₹ 8938</td>
+                                 <td>22 Feb 19</td>
+                                 <td>0-45 days with apollo</td>
+                                 <td>04 Apr 20</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="card">
+                     <div class="card-title">
+                        EMI details
+                     </div>
+                     <div class="card-body">
+                        <table class="table table-striped table-bordered table-condensed" cellpadding="0" cellspacing="0">
+                           <tbody>
+                              <tr>
+                                 <th>Id</th>
+                                 <th>Schedule Date</th>
+                                 <th>EMI Amt</th>
+                                 <th>Status</th>
+                                 <th>DPD</th>
+                                 <th class="text-center">Penalties Amt</th>
+                                 <th class="text-center">Paid Amt</th>
+                                 <th>Outstanding Amt</th>
+                              </tr>
+                              <tr>
+                                 <td># 1</td>
+                                 <td>08 Apr 19 12:00 AM</td>
+                                 <td>₹ 10000</td>
+                                 <td>
+                                    Completed					
+                                 </td>
+                                 <td>0 Days</td>
+                                 <td class="text-red">₹ 0</td>
+                                 <td class="text-red">₹ 10000</td>
+                                 <td>₹ 0</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="card">
+                     <div class="card-title">
+                        Collection details
+                     </div>
+                     <div class="card-body">
+                        <table class="table table-striped table-bordered table-condensed" cellpadding="0" cellspacing="0">
+                           <tbody>
+                              <tr>
+                                 <th>Received Amt</th>
+                                 <th>Extra Amt</th>
+                                 <th>Payment Collected</th>
+                                 <th>Actual Pay Collected</th>
+                                 <th>Agency Name</th>
+                                 <th>UTR</th>
+                                 <th>Source</th>
+                                 <th>Created By</th>
+                                 <th>Entry Date</th>
+                                 <th>Actions</th>
+                              </tr>
+                              <tr>
+                                 <td>₹ 10,000</td>
+                                 <td>₹ 0</td>
+                                 <td>08 Apr 19</td>
+                                 <td>
+                                    NA						
+                                 </td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td>NA</td>
+                                 <td>4 Apr 2020</td>
+                                 <td><button type="btn" class="btn btn-primary w-md btn-sm"><i class="fa fa-file"></i> Update</button></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="card">
+                     <div class="card-title">
+                        APPROVED WAIVER REQUEST DETAILS
+                     </div>
+                     <div class="card-body">
+                        <table class="table table-striped table-bordered table-condensed" cellpadding="0" cellspacing="0">
+                           <tbody>
+                              <tr>
+                                 <th>Id</th>
+                                 <th>Loan Emi Id</th>
+                                 <th>Waiver Request Amount</th>
+                                 <th>Waiver Request Dat	</th>
+                                 <th>Status</th>
+                                 <th>Waiver Request Description</th>
+                                 <th>Applied By</th>
+                                 <th>Department By</th>
+                                 <th>Allocated To</th>
+                                 <th>Department To</th>
+                                 <th>Action</th>
+                              </tr>
+                              <tr>
+                                 <td>₹ 10,000</td>
+                                 <td>₹ 0</td>
+                                 <td>08 Apr 19</td>
+                                 <td>
+                                    NA						
+                                 </td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td>NA</td>
+                                 <td>4 Apr 2020</td>
+                                 <td></td>
+                                 <td class="text-center">
+                                    <a class="btn btn-outline-secondary btn-sm edit" title="Edit">
+                                    <i class="fas fa-check"></i>
+                                    </a>
+                                    <a class="btn btn-outline-secondary btn-sm delte" title="Edit">
+                                    <i class="fas fa-check"></i>
+                                    </a>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="card">
+                     <div class="card-title">
+                        Outstanding Calculation
+                     </div>
+                     <div class="card-body">
+                        <table class="table table-striped table-bordered table-condensed" cellpadding="0" cellspacing="0">
+                           <tbody>
+                              <tr>
+                                 <th>Bounce Charge</th>
+                                 <th>Bounce Charge Gst</th>
+                                 <th>Total Interest</th>
+                                 <th>Total gst On Interest</th>
+                                 <th>Total Principal</th>
+                                 <th>Total Principle Interest</th>
+                                 <th>Total Collection</th>
+                                 <th>Applied Waiver</th>
+                                 <th>Collected Amount</th>
+                              </tr>
+                              <tr>
+                                 <td>₹ 10,000</td>
+                                 <td>₹ 0</td>
+                                 <td>08 Apr 19</td>
+                                 <td>
+                                    NA						
+                                 </td>
+                                 <td></td>
+                                 <td></td>
+                                 <td></td>
+                                 <td>NA</td>
+                                 <td>4 Apr 2020</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- container-fluid -->
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="card">
+                     <div class="card-title">
+                        Application Comment
+                     </div>
+                     <div class="card-body">
+                        <table class="table table-striped table-bordered table-condensed" cellpadding="0" cellspacing="0">
+                           <tbody>
+                              <tr>
+                                 <th>ID</th>
+                                 <th>Comment</th>
+                                 <th>Created by</th>
+                                 <th>Created</th>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td>#Req - last 3 month banking</td>
+                                 <td>Kiran</td>
+                                 <td>17 Apr 21</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td>#Req - last 3 month banking</td>
+                                 <td>Kiran</td>
+                                 <td>17 Apr 21</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td>#Req - last 3 month banking</td>
+                                 <td>Kiran</td>
+                                 <td>17 Apr 21</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="card">
+                     <div class="card-title">
+                        Loan Comment
+                     </div>
+                     <div class="card-body">
+                        <table class="table table-striped table-bordered table-condensed" cellpadding="0" cellspacing="0">
+                           <tbody>
+                              <tr>
+                                 <th>ID</th>
+                                 <th>Comment</th>
+                                 <th>Created by</th>
+                                 <th>Created</th>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td>#Req - last 3 month banking</td>
+                                 <td>Kiran</td>
+                                 <td>17 Apr 21</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td>#Req - last 3 month banking</td>
+                                 <td>Kiran</td>
+                                 <td>17 Apr 21</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                                 <td>#Req - last 3 month banking</td>
+                                 <td>Kiran</td>
+                                 <td>17 Apr 21</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- End Page-content -->
+            <footer class="footer">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-sm-12 text-muted text-bold">
+                        © 
+                        <span class="year">
+                           <script>document.write(new Date().getFullYear())</script> 
+                        </span>
+                        SalaryDost
+                     </div>
+                  </div>
+               </div>
+            </footer>
+         </div>
+         <!-- end main content-->
+      </div>
+      <!-- END layout-wrapper -->
+      <!-- Right Sidebar -->
+      <div class="right-bar">
+         <div data-simplebar class="h-100">
+            <div class="rightbar-title d-flex align-items-center px-3 py-4">
+               <h5 class="m-0 me-2">Settings</h5>
+               <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+               <i class="mdi mdi-close noti-icon"></i>
+               </a>
+            </div>
+            <!-- Settings -->
+            <hr class="mt-0" />
+            <h6 class="text-center mb-0">Choose Layouts</h6>
+            <div class="p-4">
+               <div class="mb-2">
+                  <img src="assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="">
+               </div>
+               <div class="form-check form-switch mb-3">
+                  <input type="checkbox" class="form-check-input theme-choice" id="light-mode-switch" checked />
+                  <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+               </div>
+               <div class="mb-2">
+                  <img src="assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="">
+               </div>
+               <div class="form-check form-switch mb-3">
+                  <input type="checkbox" class="form-check-input theme-choice" id="dark-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/app-dark.min.css" />
+                  <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+               </div>
+               <div class="mb-2">
+                  <img src="assets/images/layouts/layout-3.jpg" class="img-thumbnail" alt="">
+               </div>
+               <div class="form-check form-switch mb-5">
+                  <input type="checkbox" class="form-check-input theme-choice" id="rtl-mode-switch" data-appStyle="assets/css/app-rtl.min.css" />
+                  <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+               </div>
+            </div>
+         </div>
+         <!-- end slimscroll-menu-->
+      </div>
+      <!-- /Right-bar -->
+      <!-- Right bar overlay-->
+      <div class="rightbar-overlay"></div>
+      <!-- JAVASCRIPT -->
+      <script src="assets/libs/jquery/jquery.min.js"></script>
+      <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+      <script src="assets/libs/simplebar/simplebar.min.js"></script>
+      <script src="assets/libs/node-waves/waves.min.js"></script>
+      <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+      <!-- Required datatable js -->
+      <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+      <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+      <!-- Buttons examples -->
+      <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+      <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+      <script src="assets/libs/jszip/jszip.min.js"></script>
+      <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+      <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+      <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+      <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+      <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+      <!-- Responsive examples -->
+      <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+      <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+      <!-- Datatable init js -->
+      <script src="assets/js/pages/datatables.init.js"></script>
+      <!-- App js -->
+      <script src="assets/js/app.js"></script>
+   </body>
+   <!-- Mirrored from themesbrand.com/lexa/layouts/purple/layouts-horizontal.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 14:59:10 GMT -->
+</html>

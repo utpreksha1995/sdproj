@@ -1,0 +1,1428 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Horizontal Layout | Lexa - Admin & Dashboard Template</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+      <meta content="Themesbrand" name="author" />
+      <!-- App favicon -->
+      <link rel="shortcut icon" href="assets/images/favicon.ico">
+      <!-- Bootstrap Css -->
+      <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+      <!-- Icons Css -->
+      <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+      <!-- App Css-->
+      <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+   </head>
+   <body data-topbar="light" data-layout="horizontal">
+      <!-- Begin page -->
+      <div id="layout-wrapper">
+         <header id="page-topbar">
+            <div class="navbar-header">
+               <div class="container-fluid">
+                  <div class="float-start">
+                     <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                        <img src="assets/images/logo-sm.png" alt="" height="50">
+                        </span>
+                        <span class="logo-lg">
+                        <img src="assets/images/logo-dark.png" alt="" height="50">
+                        </span>
+                        </a>    
+                        <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                        <img src="assets/images/logo-sm.png" alt="" height="50">
+                        </span>
+                        <span class="logo-lg">
+                        <img src="assets/images/logo-light.png" alt="" height="50">
+                        </span>
+                        </a>
+                     </div>
+                     <button type="button" class="btn btn-sm px-3 font-size-24 d-lg-none header-item waves-effect waves-light" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                     <i class="mdi mdi-menu"></i>
+                     </button>
+                  </div>
+                  <div class="float-end">
+                     <select class="apl">
+                        <option>Application</option>
+                        <option>Loan</option>
+                     </select>
+                     <select class="apl">
+                        <option>ID</option>
+                        <option>Mobile</option>
+                        <option>Email</option>
+                     </select>
+                     <form class="app-search d-none d-lg-inline-block">
+                        <div class="position-relative">
+                           <input type="text" class="form-control" placeholder="Search...">
+                           <span class="fa fa-search"></span>
+                        </div>
+                     </form>
+                     <div class="dropdown d-none d-lg-inline-block ms-2">
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Add
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">    
+                           <a href="add_user_partner.html#adduser" class="dropdown-item notify-item">
+                           User
+                           </a>
+                           <a href="add_user_partner.html#addpartner" class="dropdown-item notify-item">
+                           Partner
+                           </a> 
+                        </div>
+                     </div>
+                     <div class="dropdown d-none d-lg-inline-block">
+                        <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                        <i class="mdi mdi-fullscreen font-size-24"></i>
+                        </button>
+                     </div>
+                     <div class="dropdown d-inline-block d-lg-none ms-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="mdi mdi-magnify"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+                           <form class="p-3">
+                              <div class="form-group m-0">
+                                 <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                    <div class="input-group-append">
+                                       <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="dropdown d-inline-block ms-1">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+                           data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="ti-bell"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                           aria-labelledby="page-header-notifications-dropdown">
+                           <div class="p-3">
+                              <div class="row align-items-center">
+                                 <div class="col">
+                                    <h5 class="m-0"> Notifications (258) </h5>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="p-2 border-top">
+                              <a class="btn btn-sm btn-link font-size-14 w-100 text-center" href="javascript:void(0)">
+                              View all
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                           data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="rounded-circle header-profile-user" src="assets/images/users/user-4.jpg"
+                           alt="Header Avatar">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                           <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle font-size-17 text-muted align-middle me-1"></i> Uttpreksha Bhosle</a>
+                           <a class="dropdown-item" href="#"><i class="mdi mdi-wallet font-size-17 text-muted align-middle me-1"></i> IT</a>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power font-size-17 text-muted align-middle me-1 text-danger"></i> Logout</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="top-navigation">
+               <div class="page-title-content">
+                  <div class="container-fluid">
+                     <div class="row">                             
+                     </div>
+                  </div>
+               </div>
+               <div class="container-fluid">
+                  <div class="topnav">
+                     <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+                        <div class="collapse navbar-collapse" id="topnav-menu-content">
+                           <ul class="navbar-nav">
+						      <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Module
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                    <a href="report_list.html" class="dropdown-item">Report Module</a>                                
+                                    <a href="master_report.html" class="dropdown-item">Master Report</a>
+									<a href="credit_progress_report.html" class="dropdown-item">Progress Report</a>
+									<a href="hourlyregistereduser.html" class="dropdown-item">Hourly Report</a>
+                                 </div>
+                              </li>
+                            <!--   <li class="nav-item">
+                                 <a class="nav-link" href="report_list.html">
+                                 Report Module
+                                 </a>
+                              </li> -->
+                              <!-- <li class="nav-item">
+                                 <a class="nav-link" href="master_report.html" id="topnav-email">
+                                 Master Report 
+                                 </a>                                          
+                              </li> -->
+                              <li class="nav-item">
+                                 <a class="nav-link dropdown-toggle arrow-none" href="agent_dashboard.html" id="topnav-components" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Agent Dashboard 
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="loan.html" id="topnav-forms">
+                                 Loan Dashboard 
+                                 </a>                                           
+                              </li>
+                              <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 EMI
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                    <a href="emi_schedule.html" class="dropdown-item">EMI Schedule</a>                                
+                                    <a href="emi.html" class="dropdown-item">EMI List</a>
+                                 </div>
+                              </li>
+                              <!-- <li class="nav-item">
+                                 <a class="nav-link" href="hourlyregistereduser.html" id="topnav-charts" role="button"
+                                    >
+                                 Hourly Report
+                                 </a>                                           
+                              </li> -->
+                              <li class="nav-item">
+                                 <a class="nav-link" href="blockfrauduser.html" id="topnav-pages" role="button"
+                                    >
+                                 Block Customer
+                                 </a>                                           
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="user_scubscription_skip.html" id="topnav-pages" role="button"
+                                    >
+                                 Skip Scription
+                                 </a>                                           
+                              </li>
+                              <!-- <li class="nav-item">
+                                 <a class="nav-link" href="credit_progress_report.html" id="topnav-pages" role="button"
+                                    >
+                                 progress Report
+                                 </a>                                           
+                              </li> -->
+                              <li class="nav-item">
+                                 <a class="nav-link" href="rollback.html" id="topnav-pages" role="button"
+                                    >
+                                 Roll back
+                                 </a>                                           
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="payoutdashboard.html" id="topnav-pages" role="button"
+                                    >
+                                 NBFC Balance
+                                 </a>                                           
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="ceo_collection_dashboard.html" id="topnav-pages" role="button"
+                                    >
+                                 CEO Dashboard
+                                 </a>                                           
+                              </li>
+							  
+							 
+							  <li class="nav-item">
+							  <a href="applicationallocationnew.html" class="nav-link" id="topnav-pages" role="button">Application Allocation</a>
+							  </li>
+							  <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Report
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                    <a href="getapploformat.html" class="dropdown-item">Disbursed Format</a>                                
+                                 
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- Left Sidebar End -->
+         <!-- ============================================================== -->
+         <!-- Start right Content here -->
+         <!-- ============================================================== -->
+         <div class="main-content">
+            <div class="page-content">
+               <div class="container-fluid">
+                  <!-- start page title -->				  
+                  <div class="row">
+                     <div class="col-lg-7">
+                        <div class="card">
+                           <div class="card-body cb1">
+                              <div class="">
+                                 <form>
+                                    <div class="row">
+                                       <div class="col-md-5">
+                                          <div class="">
+                                             <select class="form-control">
+                                                <option value="">Select Role</option>
+                                                <option value="Admin">Admin</option>
+                                                <option value="HOD">HOD</option>
+                                                <option value="Employe">Employee</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-5">
+                                          <div class="">
+                                             <select class="form-control">
+                                                <option value="">Select Role</option>
+                                                <option value="Admin">Admin</option>
+                                                <option value="HOD">HOD</option>
+                                                <option value="Employe">Employee</option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2">
+                                          <div class="">
+                                             <button type="submit" class="btn btn-primary w-md">Search</button>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-5">
+                        <div class="card">
+                           <div class="card-body cb1">
+                              <a href="agent_process.html"><button type="button" class="btn btn-purple1 waves-effect waves-light pull-left">Process...</button></a>							
+                              <div class="button-items btn-items1">
+                                 <a href="target.html"><button type="button" class="btn btn-secondary waves-effect pull-right"><i class="fa fa-plus"></i> Target</button></a>
+                                 <button class="btn btn-primary waves-effect waves-light pull-right" data-bs-toggle="modal" data-bs-target=".bs-example-modal-center"><i class="fa fa-upload"></i> Lead</button>
+                                 <div class="modal fade bs-example-modal-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                       <div class="modal-content">
+                                          <div class="modal-header">
+                                             <h5 class="modal-title text-center">Upload Leads</h5>
+                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-hidden="true"></button>
+                                          </div>
+                                          <div class="modal-body">
+                                             <div class="row">
+                                                <div class="col-lg-12">
+                                                   <div class="">
+                                                      <div class="">
+                                                         <div class="row">
+                                                            <div class="col-lg-12">
+                                                               <div class="mt-0">
+                                                                  <form action="#">
+                                                                     <div class="form-group mb-0">
+                                                                        <label class="form-lable">CSV File</label>
+                                                                        <input type="file" class="filestyle" data-buttonname="btn-secondary">
+                                                                     </div>
+                                                                     <div class="text-center mt-4">
+                                                                        <button type="button" class="btn btn-success waves-effect waves-light">Upload Data
+                                                                        </button>
+                                                                     </div>
+                                                                  </form>
+                                                               </div>
+                                                            </div>
+                                                         </div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- /.modal-content -->
+                                    </div>
+                                 </div>
+                                 <button type="button" class="btn btn-purple waves-effect waves-light pull-right"><< Previous Week</button>
+                                 <button type="button" class="btn btn-purple waves-effect waves-light pull-right">Next Week >></button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="page-title-box">
+                           <h4><i class="mdi mdi-arrow-right text-primary me-1"></i> DISBURSED DASHBOARD</h4>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <div class="state-information d-none d-sm-block">
+                           <div class="state-graph">
+                              <!-- <div id="header-chart-1">
+                                 <canvas width="101" height="32" style="display: inline-block; width: 101px; height: 32px; vertical-align: top;"></canvas>
+                              </div> -->
+							  <img src="assets/images/bar1.png"/>
+                              <div class="info">Today's Disbursement <span class="numb">412</span></div>
+                           </div>
+                           <div class="state-graph">
+                              <!-- <div id="header-chart-2">
+                                 <canvas width="101" height="32" style="display: inline-block; width: 101px; height: 32px; vertical-align: top;"></canvas>
+                              </div> -->
+							  <img src="assets/images/bar2.png"/>
+                              <div class="info">Today's Collection <span class="numb">412</span></div>
+                           </div>
+						   <div class="state-graph">
+                              <!-- <div id="header-chart-1">
+                                 <canvas width="101" height="32" style="display: inline-block; width: 101px; height: 32px; vertical-align: top;"></canvas>
+                              </div> -->
+							  <img src="assets/images/bar1.png"/>
+                              <div class="info">Today's Approval <span class="numb">412</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end page title -->
+                  <div class="row mt-2">
+                     <div class="col-xl-12">
+                        <div class="card">
+                           <div class="card-body">
+                              <!-- Nav tabs -->
+                              <ul class="nav nav-tabs nav-tabs-custom" role="tablist">
+                                 <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#home1" role="tab">
+                                    <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
+                                    <span class="d-none d-sm-block">Collection Target</span>
+                                    </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#profile1" role="tab">
+                                    <span class="d-block d-sm-none"><i class="far fa-user"></i></span>
+                                    <span class="d-none d-sm-block">Today's Login Time</span>
+                                    </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#messages1" role="tab">
+                                    <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
+                                    <span class="d-none d-sm-block">Credit Team Data Analysis</span>
+                                    </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#settings2" role="tab">
+                                    <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                    <span class="d-none d-sm-block">Operation Team Data Analysis</span>
+                                    </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#settings3" role="tab">
+                                    <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                    <span class="d-none d-sm-block">Outstanding Cases</span>
+                                    </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#settings4" role="tab">
+                                    <span class="d-block d-sm-none"><i class="fas fa-cog"></i></span>
+                                    <span class="d-none d-sm-block">Approval & Disbursement</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                              <!-- Tab panes -->
+                              <div class="tab-content">
+                                 <div class="tab-pane active p-3" id="home1" role="tabpanel">
+                                    <div class="row">
+                                       <div class="col-md-12">
+                                          <table id="datatable" class="table table-bordered dt-responsive nowrap">
+                                             <tbody>
+                                                <tr>
+                                                   <th>Agent Name	</th>
+                                                   <th>Target Month	</th>
+                                                   <th>Target Type</th>
+                                                   <th>Target Count</th>
+                                                   <th>Achieved Count</th>
+                                                   <th>Count Completed %</th>
+                                                   <th>Target Type</th>
+                                                   <th>Target Amount</th>
+                                                   <th>Target Achieved</th>
+                                                   <th>Amount Completed %</th>
+                                                </tr>
+                                                <tr>
+                                                   <td>Shridevi Patil	</td>
+                                                   <td>Oct 21	</td>
+                                                   <td>Count</td>
+                                                   <td>0</td>
+                                                   <td>0</td>
+                                                   <td>0%</td>
+                                                   <td>Amount</td>
+                                                   <td>Rs. 400,000.00	</td>
+                                                   <td>Rs. 80,010.00	</td>
+                                                   <td>20.00 %</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Shridevi Patil	</td>
+                                                   <td>Oct 21	</td>
+                                                   <td>Count</td>
+                                                   <td>0</td>
+                                                   <td>0</td>
+                                                   <td>0%</td>
+                                                   <td>Amount</td>
+                                                   <td>Rs. 400,000.00	</td>
+                                                   <td>Rs. 80,010.00	</td>
+                                                   <td>20.00 %</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Shridevi Patil	</td>
+                                                   <td>Oct 21	</td>
+                                                   <td>Count</td>
+                                                   <td>0</td>
+                                                   <td>0</td>
+                                                   <td>0%</td>
+                                                   <td>Amount</td>
+                                                   <td>Rs. 400,000.00	</td>
+                                                   <td>Rs. 80,010.00	</td>
+                                                   <td>20.00 %</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane p-3" id="profile1" role="tabpanel">
+                                    <div class="row">
+                                       <div class="col-md-3">
+                                          <table class="table table-bordered table-striped table-condensed">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Credit
+                                                   <input type="date" class="login"></th>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <table class="table table-bordered table-striped table-condensed">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Collection <input type="date" class="login"></th>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <table class="table table-bordered table-striped table-condensed">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">Operation <input type="date" class="login"></th>
+                                                   
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                       <div class="col-md-3">
+                                          <table class="table table-bordered table-striped table-condensed">
+                                             <tbody>
+                                                <tr>
+                                                   <th colspan="2">IT <input type="date" class="login"></th>
+                                                 
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                                <tr>
+                                                   <td>Kajal</td>
+                                                   <td>28 Oct 21 11:17 AM</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="tab-pane p-3" id="messages1" role="tabpanel">
+                                    <table class="table table-bordered dt-responsive nowrap">
+                                       <tbody>
+									      <tr>
+										    <td colspan="6"><input type="date" class="login"></td>
+										  </tr>
+                                          <tr>
+                                             <th>User</th>
+                                             <th>Pending Application</th>
+                                             <th>In-Verification Application</th>
+                                             <th>Rejected Application</th>
+                                             <th>Approved Application</th>
+                                             <th>Total Application</th>
+                                          </tr>
+                                          <tr>
+                                             <td>Total</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <div class="tab-pane p-3" id="settings2" role="tabpanel">
+								 
+                                    <table class="table table-bordered dt-responsive nowrap">
+                                       <tbody>
+									      <tr>
+										    <td colspan="6"><input type="date" class="login"></td>
+										  </tr>
+                                          <tr>
+                                             <th>User</th>
+                                             <th>Pending Application</th>
+                                             <th>Rejected Application</th>
+                                             <th>OM Approve application</th>
+                                             <th>Individual Total</th>
+                                          </tr>
+                                          <tr>
+                                             <td>Team Total	</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                    <!-- end row -->
+                                 </div>
+                                 <div class="tab-pane p-3" id="settings3" role="tabpanel">
+                                    <table class="table table-bordered dt-responsive nowrap">
+                                       <tbody>
+									      <tr>
+										    <td colspan="13"><input type="date" class="login"></td>
+										  </tr>
+                                          <tr>
+                                             <th>Date</th>
+                                             <th>Schedule cases	</th>
+                                             <th>Amount</th>
+                                             <th>ECS collected</th>
+                                             <th>ECS Amount	</th>
+                                             <th>Default Case</th>
+                                             <th>Default Amount</th>
+                                             <th>Collected from Default	</th>
+                                             <th>Default coll. Amt	</th>
+                                             <th>Pending Case</th>
+                                             <th>Pending Amount	</th>
+                                             <th>NPA Case	</th>
+                                             <th>NPA Amount</th>
+                                          </tr>
+                                          <tr>
+                                             <td>15 Nov 2021</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Total</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                             <td>0</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <div class="tab-pane p-3" id="settings4" role="tabpanel">
+                                    <div class="row">
+                                       <div class="col-3">
+                                          <div class="card tld">
+                                             <div class="card-header">
+                                                <span class="pull-left">
+                                                   <p>Upcoming Pays</p>
+                                                </span>
+                                                <span class="pull-right">
+                                                <input type="date" class="form-control">
+                                                </span>                                                
+                                             </div>
+                                             <div class="card-body">
+                                                <table class="table table-bordered dt-responsive nowrap">
+                                                   <tbody>
+                                                      <tr>
+                                                         <th>Day</th>
+                                                         <th>Amount</th>
+                                                         <th>Total</th>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Payment Collected </td>
+                                                         <td>3</td>
+                                                         <td>13,404</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Payment Collected </td>
+                                                         <td>3</td>
+                                                         <td>13,404</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Payment Collected </td>
+                                                         <td>3</td>
+                                                         <td>13,404</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Payment Collected </td>
+                                                         <td>3</td>
+                                                         <td>13,404</td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-3">
+                                          <div class="card tld">
+                                             <div class="card-header">
+                                                <span class="pull-left">
+                                                   <p>Outstanding</p>
+                                                </span>
+                                                <span class="pull-right">
+                                                <input type="date" class="form-control">
+                                                </span>
+                                             </div>
+                                             <div class="card-body">
+                                                <table class="table table-bordered dt-responsive nowrap">
+                                                   <tbody>
+                                                      <tr>
+                                                         <th>Day</th>
+                                                         <th>Amount</th>
+                                                         <th>Total</th>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Payment Collected</td>
+                                                         <td>403</td>
+                                                         <td>11,489</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Payment Collected</td>
+                                                         <td>403</td>
+                                                         <td>11,489</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Payment Collected</td>
+                                                         <td>403</td>
+                                                         <td>11,489</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Payment Collected</td>
+                                                         <td>403</td>
+                                                         <td>11,489</td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-3">
+                                          <div class="card tld">
+                                             <div class="card-header">
+                                                <span class="pull-left">
+                                                   <p>Disbursement</p>
+                                                </span>
+                                                <span class="pull-right">
+                                                <input type="date" class="form-control">
+                                                </span>
+                                             </div>
+                                             <div class="card-body">
+                                                <table class="table table-bordered table-sm dt-responsive nowrap">
+                                                   <tbody>
+                                                      <tr>
+                                                         <th>Date</th>
+                                                         <th>Cases</th>
+                                                         <th>Loan</th>
+                                                         <th>Disbursal</th>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>18 Nov 2021</td>
+                                                         <td>3</td>
+                                                         <td>13,404</td>
+                                                         <td>13,404</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>18 Nov 2021</td>
+                                                         <td>3</td>
+                                                         <td>13,404</td>
+                                                         <td>13,404</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>18 Nov 2021 </td>
+                                                         <td>3</td>
+                                                         <td>13,404</td>
+                                                         <td>13,404</td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-3">
+                                          <div class="card tld">
+                                             <div class="card-header">
+                                                <span class="pull-left">
+                                                   <p>CM Approve</p>
+                                                </span>
+                                                <span class="pull-right">
+                                                <input type="date" class="form-control">
+                                                </span>                                               
+                                             </div>
+                                             <div class="card-body">
+                                                <table class="table table-bordered dt-responsive nowrap">
+                                                   <tbody>
+                                                      <tr>
+                                                         <th>Day</th>
+                                                         <th>Cases</th>
+                                                         <th>Amount</th>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Payment Collected</td>
+                                                         <td>403</td>
+                                                         <td>11,489</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Payment Collected</td>
+                                                         <td>403</td>
+                                                         <td>11,489</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Payment Collected</td>
+                                                         <td>403</td>
+                                                         <td>11,489</td>
+                                                      </tr>
+                                                      <tr>
+                                                         <td>Payment Collected</td>
+                                                         <td>403</td>
+                                                         <td>11,489</td>
+                                                      </tr>
+                                                   </tbody>
+                                                </table>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end row -->
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="page-title-box">
+                           <h4><i class="mdi mdi-arrow-right text-primary me-1"></i> Cibil & Bank Report</h4>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-4">
+                        <div class="card">
+                           <div class="card-header">
+                              <div class="row">
+                                 <div class="col-6">
+                                    <p>Day Count</p>
+                                 </div>
+                                 <div class="col-6">
+                                    <input type="date" class="form-control">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="card-body">
+                              <table class="table table-bordered dt-responsive nowrap">
+                                 <tbody>
+                                    <tr>
+                                       <th></th>
+                                       <th>FTD No.</th>
+                                    </tr>
+                                    <tr>
+                                       <td>Cibil&nbsp;</td>
+                                       <td>
+                                          <a href="#">0
+                                          <a>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                    <td>Bank&nbsp;</td>
+                                    <td>0</td>
+                                    <!--td>0&nbsp;</td-->
+                                    </tr>
+                                    <tr>
+                                    <td>CmApprove&nbsp;</td>
+                                    <td>0</td>
+                                    </tr>
+                                    <tr>
+                                    <td>Disbursed&nbsp;</td>
+                                    <td>0</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-4">
+                     <div class="card">
+                     <div class="card-header">
+                     <div class="row">
+                     <div class="col-4">
+                     <p>Month Count</p>
+                     </div>
+                     <div class="col-4">
+                     <select class="form-control">
+                     <option value="2018">2018</option>
+                     <option value="2018">2018</option>
+                     <option value="2018">2018</option>
+                     <option value="2018">2018</option>
+                     </select>
+                     </div>
+                     <div class="col-4">
+                     <select class="form-control">
+                     <option value="Jan">Jan</option>
+                     <option value="Feb">Feb</option>
+                     <option value="March">March</option>
+                     <option value="April">April</option>
+                     </select>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="card-body">
+                     <table class="table table-bordered dt-responsive nowrap">
+                     <tbody>
+                     <tr>
+                     <th></th>
+                     <th>FTD No.</th>
+                     </tr>
+                     <tr>
+                     <td>Cibil&nbsp;</td>
+                     <td>0</td>
+                     </tr>
+                     <tr>
+                     <td>Bank&nbsp;</td>
+                     <td>0</td>
+                     <!--td>0&nbsp;</td-->
+                     </tr>
+                     <tr>
+                     <td>CmApprove&nbsp;</td>
+                     <td>0</td>
+                     </tr>
+                     <tr>
+                     <td>Disbursed&nbsp;</td>
+                     <td>0</td>
+                     </tr>
+                     </tbody>
+                     </table>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="col-4">
+                     <div class="card">
+                     <div class="card-header">
+                     <div class="row">
+                     <div class="col-9">
+                     <p>Year Count</p>
+                     </div>
+                     <div class="col-3">
+                     <select class="form-control">
+                     <option value="2018">2018</option>
+                     <option value="2018">2018</option>
+                     <option value="2018">2018</option>
+                     <option value="2018">2018</option>
+                     </select>
+                     </div>
+                     </div>
+                     </div>
+                     <div class="card-body">
+                     <table class="table table-bordered dt-responsive nowrap">
+                     <tbody>
+                     <tr>
+                     <th></th>
+                     <th>FTD No.</th>
+                     </tr>
+                     <tr>
+                     <td>Cibil&nbsp;</td>
+                     <td>0</td>
+                     </tr>
+                     <tr>
+                     <td>Bank&nbsp;</td>
+                     <td>0</td>
+                     <!--td>0&nbsp;</td-->
+                     </tr>
+                     <tr>
+                     <td>CmApprove&nbsp;</td>
+                     <td>0</td>
+                     </tr>
+                     <tr>
+                     <td>Disbursed&nbsp;</td>
+                     <td>0</td>
+                     </tr>
+                     </tbody>
+                     </table>
+                     </div>
+                     </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                  <div class="col-12">
+                  <div class="page-title-box">
+                  <h4><i class="mdi mdi-arrow-right text-primary me-1"></i> Total Loan Data</h4>
+                  </div>
+                  <div class="card">
+                  <div class="card-body">
+                  <table class="table table-bordered dt-responsive nowrap">
+                  <tbody>
+                  <tr>
+                  <th>Loan</th>
+                  <th>EMI Collection</th>
+                  <th>EMI Amount</th>
+                  <th>Approve Amount</th>
+                  <th>Disburse Amount</th>
+                  <th>Received Amount</th>
+                  <th>Default Principle</th>
+                  <th>Default Penalty</th>
+                  <th>NPA Principle</th>
+                  <th>NPA Penalty</th>
+                  <th>Extra Amount</th>
+                  </tr>
+                  <tr>
+                  <td>12720</td>
+                  <td>16316</td>
+                  <td>₹ 6,96,57,750</td>
+                  <td>₹ 6,71,96,793</td>
+                  <td>₹ 5,36,93,331</td>
+                  <td>₹ 5,85,81,546</td>
+                  <td>₹ 20,56,758</td>
+                  <td>₹ 6,24,491</td>
+                  <td>₹ 35,23,013</td>
+                  <td>₹ 39,59,089</td>
+                  <td>₹ 55266</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                  <div class="col-6">
+                  <div class="card tld mt-4">
+                  <div class="card-header">
+                  <div class="row">
+                  <div class="col-8">
+                  <p>Day Collection</p>
+                  </div>
+                  <div class="col-4">
+                  <input type="date" class="form-control">
+                  </div>
+                  </div>
+                  </div>
+                  <div class="card-body">
+                  <table class="table table-bordered dt-responsive nowrap">
+                  <tbody>
+                  <tr>
+                  <th></th>
+                  <th>FTD No.</th>
+                  <th>FTD Value</th>
+                  </tr>
+                  <tr>
+                  <td>Payment Collected </td>
+                  <td>3</td>
+                  <td>13,404</td>
+                  </tr>
+                  <tr>
+                  <td>Payment Collected </td>
+                  <td>3</td>
+                  <td>13,404</td>
+                  </tr>
+                  <tr>
+                  <td>Payment Collected </td>
+                  <td>3</td>
+                  <td>13,404</td>
+                  </tr>
+                  <tr>
+                  <td>Payment Collected </td>
+                  <td>3</td>
+                  <td>13,404</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="col-6">
+                  <div class="card tld mt-4">
+                  <div class="card-header">
+                  <div class="row">
+                  <div class="col-8">
+                  <p>Month Collection</p>
+                  </div>
+                  <div class="col-4">
+                  <input type="date" class="form-control">
+                  </div>
+                  </div>
+                  </div>
+                  <div class="card-body">
+                  <table class="table table-bordered dt-responsive nowrap">
+                  <tbody>
+                  <tr>
+                  <th></th>
+                  <th>MTD No.</th>
+                  <th>MTD Value</th>
+                  </tr>
+                  <tr>
+                  <td>Payment Collected</td>
+                  <td>403</td>
+                  <td>11,489</td>
+                  </tr>
+                  <tr>
+                  <td>Payment Collected</td>
+                  <td>403</td>
+                  <td>11,489</td>
+                  </tr>
+                  <tr>
+                  <td>Payment Collected</td>
+                  <td>403</td>
+                  <td>11,489</td>
+                  </tr>
+                  <tr>
+                  <td>Payment Collected</td>
+                  <td>403</td>
+                  <td>11,489</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="page-title-box">
+                  <h4><i class="mdi mdi-arrow-right text-primary me-1"></i> Disbursed Format</h4>
+                  </div>
+                  <div class="row">
+                  <div class="col-6">
+                  <div class="card">
+                  <div class="card-header">
+                  <div class="row">
+                  <div class="col-8">
+                  <p>Application Allocation</p>
+                  </div>
+                  <div class="col-4">
+                  <input type="date" class="form-control"/>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="card-body">
+                  <div class="table-responsive" style="height:300px;">
+                  <table class="table table-bordered dt-responsive nowrap">
+                  <tbody>
+                  <tr>
+                  <th>User</th>
+                  <th>Unresolved</th>
+                  <th>Open</th>
+                  <th>Pending</th>
+                  <th>Resolved</th>
+                  </tr>
+                  <tr>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  </tr>
+                  <tr>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  </tr>
+                  <tr>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  </tr>
+                  <tr>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  </tr>
+                  <tr>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  </tr>
+                  <tr>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  </tr>
+                  <tr>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  </tr>
+                  <tr>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="col-6">
+                  <div class="card">
+                  <div class="card-header">
+                  <div class="row">
+                  <div class="col-8">
+                  <p>Lead Allocation</p>
+                  </div>
+                  <div class="col-4">
+                  <input type="date" class="form-control"/>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="card-body">
+                  <div class="table-responsive" style="height:300px;">
+                  <table class="table table-bordered dt-responsive nowrap">
+                  <tbody>
+                  <tr>
+                  <th>User</th>
+                  <th>Unresolved</th>
+                  <th>Open</th>
+                  <th>Pending</th>
+                  <th>Resolved</th>
+                  </tr>
+                  <tr>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                  <div class="col-6">
+                  <div class="card">
+                  <div class="card-header">
+                  <div class="row">
+                  <div class="col-8">
+                  <p>Loan Allocation</p>
+                  </div>
+                  <div class="col-4">
+                  <input type="date" class="form-control"/>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="card-body">
+                  <div class="table-responsive" style="height:300px;">
+                  <table class="table table-bordered dt-responsive nowrap">
+                  <tbody>
+                  <tr>
+                  <th>User</th>
+                  <th>Unresolved</th>
+                  <th>Open</th>
+                  <th>Pending</th>
+                  <th>Resolved</th>
+                  </tr>
+                  <tr>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="col-6">
+                  <div class="card">
+                  <div class="card-header">
+                  <div class="row">
+                  <div class="col-8">
+                  <p>Waiver request allocation</p>
+                  </div>
+                  <div class="col-4">
+                  <input type="date" class="form-control"/>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="card-body">
+                  <div class="table-responsive" style="height:300px;">
+                  <table class="table table-bordered dt-responsive nowrap">
+                  <tbody>
+                  <tr>
+                  <th>User</th>
+                  <th>Unresolved</th>
+                  <th>Open</th>
+                  <th>Pending</th>
+                  <th>Resolved</th>
+                  </tr>
+                  <tr>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  <td>0</td>
+                  <td>Cibil</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  <!-- Start row -->
+                  <!-- end row -->
+               </div>
+               <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+            <footer class="footer">
+            <div class="container-fluid">
+            <div class="row">
+            <div class="col-sm-12 text-bold text-muted">
+            © 
+            <span class="year">
+            <script>document.write(new Date().getFullYear())</script>
+            </span>
+            SalaryDost</span>
+            </div>
+            </div>
+            </div>
+            </footer>
+         </div>
+         <!-- end main content-->
+      </div>
+     
+     
+      <!-- /Right-bar -->
+      <!-- Right bar overlay-->
+      
+      <!-- /Right-bar -->
+      <!-- Right bar overlay-->
+      <div class="rightbar-overlay"></div>
+      <!-- JAVASCRIPT -->
+      <script src="assets/libs/jquery/jquery.min.js"></script>
+      <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+      <script src="assets/libs/simplebar/simplebar.min.js"></script>
+      <script src="assets/libs/node-waves/waves.min.js"></script>
+      <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+      <!--Morris Chart-->
+      <script src="assets/libs/morris.js/morris.min.js"></script>
+      <script src="assets/libs/raphael/raphael.min.js"></script>
+      <script src="assets/js/pages/dashboard.init.js"></script>
+      <!-- App js -->
+      <script src="assets/js/app.js"></script>
+      <script src="assets/libs/admin-resources/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+   </body>
+   <!-- Mirrored from themesbrand.com/lexa/layouts/purple/layouts-horizontal.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 14:59:10 GMT -->
+</html>

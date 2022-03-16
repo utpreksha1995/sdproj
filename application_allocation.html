@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Horizontal Layout | Lexa - Admin & Dashboard Template</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+      <meta content="Themesbrand" name="author" />
+      <!-- App favicon -->
+      <link rel="shortcut icon" href="assets/images/favicon.ico">
+      <!-- Bootstrap Css -->
+      <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+      <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+      <!-- Responsive datatable examples -->
+      <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+      <!-- Bootstrap Css -->
+      <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+      <!-- Icons Css -->
+      <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+      <!-- App Css-->
+      <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+   </head>
+   <body data-topbar="light" data-layout="horizontal">
+      <!-- Begin page -->
+      <div id="layout-wrapper">
+         <header id="page-topbar">
+            <div class="navbar-header">
+               <div class="container-fluid">
+                  <div class="float-start">
+                     <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                        <img src="assets/images/logo-sm.png" alt="" height="50">
+                        </span>
+                        <span class="logo-lg">
+                        <img src="assets/images/logo-dark.png" alt="" height="50">
+                        </span>
+                        </a>    
+                        <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                        <img src="assets/images/logo-sm.png" alt="" height="50">
+                        </span>
+                        <span class="logo-lg">
+                        <img src="assets/images/logo-light.png" alt="" height="50">
+                        </span>
+                        </a>
+                     </div>
+                     <button type="button" class="btn btn-sm px-3 font-size-24 d-lg-none header-item waves-effect waves-light" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
+                     <i class="mdi mdi-menu"></i>
+                     </button>
+                  </div>
+                  <div class="float-end">
+                     <select class="apl">
+                        <option>Application</option>
+                        <option>Loan</option>
+                     </select>
+                     <select class="apl">
+                        <option>ID</option>
+                        <option>Mobile</option>
+                        <option>Email</option>
+                     </select>
+                     <form class="app-search d-none d-lg-inline-block">
+                        <div class="position-relative">
+                           <input type="text" class="form-control" placeholder="Search...">
+                           <span class="fa fa-search"></span>
+                        </div>
+                     </form>
+                     <div class="dropdown d-none d-lg-inline-block ms-2">
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Add
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">    
+                           <a href="add_user_partner.html#adduser" class="dropdown-item notify-item">
+                           User
+                           </a>
+                           <a href="add_user_partner.html#addpartner" class="dropdown-item notify-item">
+                           Partner
+                           </a> 
+                        </div>
+                     </div>
+                     <div class="dropdown d-none d-lg-inline-block">
+                        <button type="button" class="btn header-item noti-icon waves-effect" data-toggle="fullscreen">
+                        <i class="mdi mdi-fullscreen font-size-24"></i>
+                        </button>
+                     </div>
+                     <div class="dropdown d-inline-block d-lg-none ms-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="mdi mdi-magnify"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+                           <form class="p-3">
+                              <div class="form-group m-0">
+                                 <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                    <div class="input-group-append">
+                                       <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="dropdown d-inline-block ms-1">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+                           data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="ti-bell"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                           aria-labelledby="page-header-notifications-dropdown">
+                           <div class="p-3">
+                              <div class="row align-items-center">
+                                 <div class="col">
+                                    <h5 class="m-0"> Notifications (258) </h5>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="p-2 border-top">
+                              <a class="btn btn-sm btn-link font-size-14 w-100 text-center" href="javascript:void(0)">
+                              View all
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                           data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="rounded-circle header-profile-user" src="assets/images/users/user-4.jpg"
+                           alt="Header Avatar">
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                           <a class="dropdown-item" href="#"><i class="mdi mdi-account-circle font-size-17 text-muted align-middle me-1"></i> Profile</a>
+                           <a class="dropdown-item" href="#"><i class="mdi mdi-wallet font-size-17 text-muted align-middle me-1"></i> My Wallet</a>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item text-danger" href="#"><i class="mdi mdi-power font-size-17 text-muted align-middle me-1 text-danger"></i> Logout</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="top-navigation">
+               <div class="page-title-content">
+                  <div class="container-fluid">
+                     <div class="row">                             
+                     </div>
+                  </div>
+               </div>
+               <div class="container-fluid">
+                  <div class="topnav">
+                     <nav class="navbar navbar-light navbar-expand-lg topnav-menu">
+                        <div class="collapse navbar-collapse" id="topnav-menu-content">
+                           <ul class="navbar-nav">
+						      <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Module
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                    <a href="report_list.html" class="dropdown-item">Report Module</a>                                
+                                    <a href="master_report.html" class="dropdown-item">Master Report</a>
+									<a href="credit_progress_report.html" class="dropdown-item">Progress Report</a>
+									<a href="hourlyregistereduser.html" class="dropdown-item">Hourly Report</a>
+                                 </div>
+                              </li>
+                            <!--   <li class="nav-item">
+                                 <a class="nav-link" href="report_list.html">
+                                 Report Module
+                                 </a>
+                              </li> -->
+                              <!-- <li class="nav-item">
+                                 <a class="nav-link" href="master_report.html" id="topnav-email">
+                                 Master Report 
+                                 </a>                                          
+                              </li> -->
+                              <li class="nav-item">
+                                 <a class="nav-link dropdown-toggle arrow-none" href="agent_dashboard.html" id="topnav-components" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Agent Dashboard 
+                                 </a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="loan.html" id="topnav-forms">
+                                 Loan Dashboard 
+                                 </a>                                           
+                              </li>
+                              <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 EMI
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                    <a href="emi_schedule.html" class="dropdown-item">EMI Schedule</a>                                
+                                    <a href="emi.html" class="dropdown-item">EMI List</a>
+                                 </div>
+                              </li>
+                              <!-- <li class="nav-item">
+                                 <a class="nav-link" href="hourlyregistereduser.html" id="topnav-charts" role="button"
+                                    >
+                                 Hourly Report
+                                 </a>                                           
+                              </li> -->
+                              <li class="nav-item">
+                                 <a class="nav-link" href="blockfrauduser.html" id="topnav-pages" role="button"
+                                    >
+                                 Block Customer
+                                 </a>                                           
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="user_scubscription_skip.html" id="topnav-pages" role="button"
+                                    >
+                                 Skip Scription
+                                 </a>                                           
+                              </li>
+                              <!-- <li class="nav-item">
+                                 <a class="nav-link" href="credit_progress_report.html" id="topnav-pages" role="button"
+                                    >
+                                 progress Report
+                                 </a>                                           
+                              </li> -->
+                              <li class="nav-item">
+                                 <a class="nav-link" href="rollback.html" id="topnav-pages" role="button"
+                                    >
+                                 Roll back
+                                 </a>                                           
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="payoutdashboard.html" id="topnav-pages" role="button"
+                                    >
+                                 NBFC Balance
+                                 </a>                                           
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="ceo_collection_dashboard.html" id="topnav-pages" role="button"
+                                    >
+                                 CEO Dashboard
+                                 </a>                                           
+                              </li>
+							  
+							 
+							  <li class="nav-item">
+							  <a href="applicationallocationnew.html" class="nav-link" id="topnav-pages" role="button">Application Allocation</a>
+							  </li>
+							  <li class="nav-item dropdown">
+                                 <a class="nav-link dropdown-toggle arrow-none" href="#" id="topnav-more" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 Report
+                                 </a>
+                                 <div class="dropdown-menu" aria-labelledby="topnav-more">
+                                    <a href="getapploformat.html" class="dropdown-item">Disbursed Format</a>                                
+                                 
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <!-- Left Sidebar End -->
+         <!-- ============================================================== -->
+         <!-- Start right Content here -->
+         <!-- ============================================================== -->
+         <div class="main-content">
+            <div class="page-content">
+               <div class="container-fluid">
+                  <!-- start page title -->
+                  <div class="row">
+                     <div class="col-sm-6">
+                        <div class="page-title-box">
+                           <h4><i class="mdi mdi-arrow-right text-primary me-1"></i> Applicatin Allocation</h4>
+                        </div>
+                     </div>
+                     <div class="col-sm-6">
+                        <button class="btn btn-secondary waves-effect waves-light push-right btn-sm">Bulk Allocation</button>
+                     </div>
+                  </div>
+                  <!-- end page title -->
+                  <div class="row">
+                     <div class="col-12">
+                        <div class="email-leftbar card">
+                           <input type="date" class="form-control">
+                           <div class="mail-list mt-3">
+                              <select name="case_type" class="form-control" id="AllocationCaseType">
+                                 <option value="Allocation" selected="selected">Allocation</option>
+                                 <option value="Application">Application</option>
+                                 <option value="UserJoin">Register User</option>
+                              </select>
+                           </div>
+                           <select name="date_type" class="form-control mt-3" id="AllocationDateType">
+                              <option value="modified" selected="selected">Modified</option>
+                              <option value="created">Created</option>
+                              <option value="payment_capture_date">Payment Date</option>
+                           </select>
+                           <select name="application_status" class="form-control mt-3" id="AllocationApplicationStatus">
+                              <option value="">Select Application Status</option>
+                              <option value="assigned" selected="selected">Assigned</option>
+                              <option value="unassigned">Un Assigned</option>
+                              <option value="omassigned">OP Assigned</option>
+                              <option value="omunassigned">OP Un Assigned</option>
+                           </select>
+                           <input class="form-control mt-3" placeholder="Application Id" type="text">							
+                           <input class="form-control mt-3" placeholder="Mobile" type="text">
+                           <input class="form-control mt-3" placeholder="Email ID" type="text">
+                           <select name="id_status" class="form-control mt-3" id="AllocationIdStatus">
+                              <option value="">Select Application Status</option>
+                              <optgroup label="Application">
+                                 <option value="captured">Register User</option>
+                                 <option value="signed">Signed User</option>
+                                 <option value="upload">Upload</option>
+                                 <option value="cm-pre-approve">Cm Pre Approve</option>
+                                 <option value="cm-approve">Cm Approve</option>
+                                 <option value="om-approve">Om Approve</option>
+                              </optgroup>
+                           </select>
+                           <select name="due_response" class="form-control mt-3" id="AllocationDueResponse">
+                              <option value="">Select Due Response</option>
+                              <option value="1">Today</option>
+                              <option value="2">Tomorrow</option>
+                              <option value="3">Next 8 hours</option>
+                              <option value="4">Next 4 hours</option>
+                              <option value="5">Next 2 hours</option>
+                              <option value="6">Next hour</option>
+                              <option value="7">Next 30 minutes</option>
+                           </select>
+                           <select name="allocation_status_id" class="form-control mt-3">
+                              <option value="">Select Allocation Status</option>
+                              <option value="1">All unresolved</option>
+                              <option value="2">Open</option>
+                              <option value="3">Pending</option>
+                              <option value="4">Resolved</option>
+                              <option value="5">Closed</option>
+                              <option value="6">System Resolved</option>
+                           </select>
+                           <select name="allocation_department_id" class="form-control mt-3">
+                              <option value="">Select Department</option>
+                              <optgroup label="Accounts">
+                                 <option value="7">Account</option>
+                              </optgroup>
+                              <optgroup label="Collections">
+                                 <option value="9">Collection</option>
+                              </optgroup>
+                              <optgroup label="Credits">
+                                 <option value="11">Credit</option>
+                              </optgroup>
+                              <optgroup label="Customer Supports">
+                                 <option value="13">CustomerSupport</option>
+                              </optgroup>
+                              <optgroup label="ITs">
+                                 <option value="15">IT</option>
+                              </optgroup>
+                              <optgroup label="Operations">
+                                 <option value="17">Operation</option>
+                              </optgroup>
+                              <optgroup label="Admins">
+                                 <option value="28">Admin</option>
+                              </optgroup>
+                           </select>
+                           <select name="allocation_agent_id" class="form-control mt-3" placeholder="Agent" id="AllocationAllocationAgentId">
+                              <option value="">Select Agent</option>
+                           </select>
+                           <div class="button-items mt-3">
+                              <button type="button" class="btn btn-primary waves-effect waves-light">Search</button>
+                              <button type="button" class="btn btn-secondary waves-effect">Reset</button>
+                           </div>
+                        </div>
+                        <div class="email-rightbar mb-3">
+                           <div class="card">
+                              <div class="card-body">
+                                 <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                    <thead>
+                                       <tr>
+                                          <th>ID</th>
+                                          <th>User</th>
+                                          <th>Status</th>
+                                          <th>City</th>
+                                          <th>Month Salry</th>
+                                          <th>Amt</th>
+                                          <th>Days</th>
+                                          <th>Allocation Status</th>
+                                          <th>Dept From</th>
+                                          <th>Agent From</th>
+                                          <th>Dept To</th>
+                                          <th>Alloc To</th>
+                                          <th>Allocation Description</th>
+                                          <th>Allocation Created</th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>1126112</td>
+                                          <td>Donna Snider</td>
+                                          <td>Customer Support</td>
+                                          <td>New York</td>
+                                          <td>27</td>
+                                          <td>2011/01/25</td>
+                                          <td>120</td>
+                                          <td>Open</td>
+                                          <td>Credit</td>
+                                          <td>Abhijeet Sawant</td>
+                                          <td>Credit</td>
+                                          <td>Bhagyalaxmi Dudam</td>
+                                          <td>System</td>
+                                          <td>28 Oct 21 09:30 AM</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- end col -->
+                     </div>
+                  </div>
+                  <!-- end row -->
+                  <!-- end row -->
+               </div>
+               <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+            <footer class="footer">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-sm-12 text-muted text-bold">
+                        © 
+                        <span class="year">
+                           <script>document.write(new Date().getFullYear())</script> 
+                        </span>
+                        SalaryDost
+                     </div>
+                  </div>
+               </div>
+            </footer>
+         </div>
+         <!-- end main content-->
+      </div>
+      <!-- END layout-wrapper -->
+      <!-- Right Sidebar -->
+      <div class="right-bar">
+         <div data-simplebar class="h-100">
+            <div class="rightbar-title d-flex align-items-center px-3 py-4">
+               <h5 class="m-0 me-2">Settings</h5>
+               <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+               <i class="mdi mdi-close noti-icon"></i>
+               </a>
+            </div>
+            <!-- Settings -->
+            <hr class="mt-0" />
+            <h6 class="text-center mb-0">Choose Layouts</h6>
+            <div class="p-4">
+               <div class="mb-2">
+                  <img src="assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="">
+               </div>
+               <div class="form-check form-switch mb-3">
+                  <input type="checkbox" class="form-check-input theme-choice" id="light-mode-switch" checked />
+                  <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+               </div>
+               <div class="mb-2">
+                  <img src="assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="">
+               </div>
+               <div class="form-check form-switch mb-3">
+                  <input type="checkbox" class="form-check-input theme-choice" id="dark-mode-switch" data-bsStyle="assets/css/bootstrap-dark.min.css" data-appStyle="assets/css/app-dark.min.css" />
+                  <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+               </div>
+               <div class="mb-2">
+                  <img src="assets/images/layouts/layout-3.jpg" class="img-thumbnail" alt="">
+               </div>
+               <div class="form-check form-switch mb-5">
+                  <input type="checkbox" class="form-check-input theme-choice" id="rtl-mode-switch" data-appStyle="assets/css/app-rtl.min.css" />
+                  <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+               </div>
+            </div>
+         </div>
+         <!-- end slimscroll-menu-->
+      </div>
+      <!-- /Right-bar -->
+      <!-- Right bar overlay-->
+      <div class="rightbar-overlay"></div>
+      <!-- JAVASCRIPT -->
+      <script src="assets/libs/jquery/jquery.min.js"></script>
+      <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+      <script src="assets/libs/simplebar/simplebar.min.js"></script>
+      <script src="assets/libs/node-waves/waves.min.js"></script>
+      <script src="assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+      <!-- Required datatable js -->
+      <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+      <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+      <!-- Buttons examples -->
+      <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+      <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+      <script src="assets/libs/jszip/jszip.min.js"></script>
+      <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+      <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+      <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+      <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+      <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+      <!-- Responsive examples -->
+      <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+      <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+      <!-- Datatable init js -->
+      <script src="assets/js/pages/datatables.init.js"></script>
+      <!-- App js -->
+      <script src="assets/js/app.js"></script>
+   </body>
+   <!-- Mirrored from themesbrand.com/lexa/layouts/purple/layouts-horizontal.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 14:59:10 GMT -->
+</html>
